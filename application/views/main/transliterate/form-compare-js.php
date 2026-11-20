@@ -73,14 +73,7 @@
             });
         }
 
-        if (srcType === 'burma') {
-            burmesesanscriptAsync(lojulaPali(sourceTxt)).done(function (iastText) {
-                var destOut = Sanscript.t(iastText.toLowerCase(), 'iast', getDestTypeVal());
-                runBackendCompare(iastText, destOut);
-            });
-        } else {
-            runBackendCompare(transliteToBackend(), transliteration());
-        }
+        runBackendCompare(transliteToBackend(), transliteration());
     });
 
     $(document).on('click', '.checkbox-sanskrit', function () {

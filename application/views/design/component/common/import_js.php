@@ -8,8 +8,8 @@
 <!--slow link creative-->
 
 
-<script src="<?php echo base_url() ?>sanscript/sanscript-2.js?v=20261120"></script>
-<script src="<?php echo base_url() ?>sanscript/thaisanscript-2.js?v=20261120"></script>
+<script src="<?php echo base_url() ?>sanscript/sanscript-2.js?v=20261120e"></script>
+<script src="<?php echo base_url() ?>sanscript/thaisanscript-2.js?v=20261120e"></script>
 <script type="text/javascript">
 //    $('a').click(function () {
 //        $('html, body').animate({

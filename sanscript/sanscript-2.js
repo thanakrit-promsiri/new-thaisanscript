@@ -100,7 +100,7 @@
             other_marks: '𑀁 𑀂 𑀀'.split(' '),
             virama: ['𑁆'],
             consonants: '𑀓 𑀔 𑀕 𑀖 𑀗 𑀘 𑀙 𑀚 𑀛 𑀜 𑀝 𑀞 𑀟 𑀠 𑀡 𑀢 𑀣 𑀤 𑀥 𑀦 𑀧 𑀨 𑀩 𑀪 𑀫 𑀬 𑀭 𑀮 𑀯 𑀰 𑀱 𑀲 𑀳 𑀴 𑀓𑁆𑀱 𑀚𑁆𑀜'.split(' '),
-            symbols: '𑁦 𑁧 𑁨 𑁩 𑁪 𑁫 𑁬 𑁭 𑁮 𑁯 ૐ ઽ ૤ ૥'.split(' '),
+            symbols: "𑁦 𑁧 𑁨 𑁩 𑁪 𑁫 𑁬 𑁭 𑁮 𑁯 𑀑𑀁 ' 𑁇 𑁈".split(' '),
             candra: ['ૅ']
         },
         /* Gujarati
@@ -296,15 +296,13 @@
             symbols: "๐ ๑ ๒ ๓ ๔ ๕ ๖ ๗ ๘ ๙ โอํ ' ฯ ๚".split(' ')
         },
 
-        burmese: {
-//vowels: 'อ า ิ ี ุ ู ฤ ฤๅ ฦ ฦๅ  เ ไ  โ เ-า'.split(' '),
-            vowels: 'อ ာ ิ ี ု ู ฤ ฤๅ ฦ ฦๅ  ေ ไ  ော เ-า'.split(' '),
-            other_marks: ['ํ', 'ะ', 'ัํ'],
-            virama: ['ฺ'],
-            //consonants: 'ก ข ค ฆ ง จ ฉ ช ฌ ญ ฏ ฐ ฑ ฒ ณ ต ถ ท ธ น ป ผ พ ภ ม ย ร ล ว ศ ษ ส ห ฬ กษ ชญ'.split(' '),
-            consonants: 'က ခ ဂ ဃ င စ ဆ ဇ ဈ ဉ ဋ ဌ ဍ ဎ ဏ တ ထ ဒ ဓ န ပ ဖ ဗ ဘ မ ယ ရ လ ဝ - - သ ဟ ဠ    '.split(' '),
-
-            symbols: "๐ ๑ ๒ ๓ ๔ ๕ ๖ ๗ ๘ ๙ โอํ ' ฯ ๚".split(' ')
+        burma: {
+            vowels: 'အ အာ ဣ ဤ ဥ ဦ ၒ ၓ ၔ ၕ  ဧ အဲ  ဩ ဪ'.split(' '),
+            vowel_marks: 'ာ ိ ီ ု ူ ၖ ၗ ၘ ၙ  ေ ဲ  ော ော်'.split(' '),
+            other_marks: ['ံ', 'း', 'ံ'],
+            virama: ['်'],
+            consonants: 'က ခ ဂ ဃ င စ ဆ ဇ ဈ ဉ ဋ ဌ ဍ ဎ ဏ တ ထ ဒ ဓ န ပ ဖ ဗ ဘ မ ယ ရ လ ဝ ၐ ၑ သ ဟ ဠ က္ၑ ဇ္ဉ'.split(' '),
+            symbols: "၀ ၁ ၂ ၃ ၄ ၅ ၆ ၇ ၈ ၉ ဩံ ' ၊ ။".split(' ')
         },
 		
         lao: {
@@ -315,6 +313,33 @@
                 //consonants: 'ก ข ค ฆ ง จ ฉ ช ฌ ญ ฏ ฐ ฑ ฒ ณ ต ถ ท ธ น ป ผ พ ภ ม ย ร ล ว ศ ษ ส ห ฬ กษ ชญ'.split(' '),
                 consonants: 'ກ ຂ ຄ ຆ ງ ຈ ຉ ຊ ຌ ຎ ຏ ຐ ຑ ຒ ຓ ຕ ຖ ທ ຘ ນ ປ ຜ ພ ຠ ມ ຍ ຣ ລ ວ ຨ ຩ ສ ຫ ຬ ກຩ ຊຎ'.split(' '),
                 symbols: "໐ ໑ ໒ ໓ ໔ ໕ ໖ ໗ ໘ ໙ ໂອໍ ' ฯ ๚".split(' ')
+        },
+
+        khmer: {
+            vowels: 'អ អា ឥ ឦ ឧ ឩ ឫ ឬ ឭ ឮ  ឯ ឰ  ឱ ឳ'.split(' '),
+            vowel_marks: 'ា ិ ី ុ ូ ្ឫ ្ឬ ្ឭ ្ឮ  េ ៃ  ោ ៅ'.split(' '),
+            other_marks: ['ំ', 'ះ', 'ំ'],
+            virama: ['្'],
+            consonants: 'ក ខ គ ឃ ង ច ឆ ជ ឈ ញ ដ ឋ ឌ ឍ ណ ត ថ ទ ធ ន ប ផ ព ភ ម យ រ ល វ ឝ ឞ ស ហ ឡ ក្ឞ ជ្ញ'.split(' '),
+            symbols: "០ ១ ២ ៣ ៤ ៥ ៦ ៧ ៨ ៩ ឱំ ៜ ។ ៕".split(' ')
+        },
+
+        sinhala: {
+            vowels: 'අ ආ ඉ ඊ උ ඌ ඍ ඎ ඏ ඐ එ ඒ ඓ ඔ ඕ ඖ'.split(' '),
+            vowel_marks: 'ා ි ී ු ූ ෘ ෲ ෟ ෳ ෙ ේ ෛ ො ෝ ෞ'.split(' '),
+            other_marks: ['ං', 'ඃ', 'ං'],
+            virama: ['්'],
+            consonants: 'ක ඛ ග ඝ ඞ ච ඡ ජ ඣ ඤ ට ඨ ඩ ඪ ණ ත ථ ද ධ න ප ඵ බ භ ම ය ර ල ව ශ ෂ ස හ ළ ක්‍ෂ ඥ'.split(' '),
+            symbols: "0 1 2 3 4 5 6 7 8 9 ඕං ' । ॥".split(' ')
+        },
+
+        tibetan: {
+            vowels: 'ཨ ཨཱ ཨི ཨཱི ཨུ ཨཱུ ཨྲྀ ཨཷ ཨླྀ ཨཹ  ཨེ ཨཻ  ཨོ ཨཽ'.split(' '),
+            vowel_marks: 'ཱ ི ཱི ུ ཱུ ྲྀ ཷ ླྀ ཹ  ེ ཻ  ོ ཽ'.split(' '),
+            other_marks: ['ཾ', 'ཿ', 'ྃ'],
+            virama: ['྄'],
+            consonants: 'ཀ ཁ ག གྷ ང ཙ ཚ ཛ ཛྷ ཉ ཊ ཋ ཌ ཌྷ ཎ ཏ ཐ ད དྷ ན པ ཕ བ བྷ མ ཡ ར ལ ཝ ཤ ཥ ས ཧ ལ ཀྵ ཛྙ'.split(' '),
+            symbols: '༠ ༡ ༢ ༣ ༤ ༥ ༦ ༧ ༨ ༩ ༀ ྅ ། ༎'.split(' ')
         }
     },
             // Set of names of schemes
@@ -479,20 +504,32 @@
                 }
 
                 if (group === 'vowel_marks' || group === 'virama') {
-                    marks[F] = T;
+                    if (!(F in marks)) {
+                        marks[F] = T;
+                    }
                     for (j = 0; j < numAlts; j++) {
-                        marks[alts[j]] = T;
+                        if (!(alts[j] in marks)) {
+                            marks[alts[j]] = T;
+                        }
                     }
                 } else {
-                    letters[F] = T;
+                    if (!(F in letters)) {
+                        letters[F] = T;
+                    }
                     for (j = 0; j < numAlts; j++) {
-                        letters[alts[j]] = T;
+                        if (!(alts[j] in letters)) {
+                            letters[alts[j]] = T;
+                        }
                     }
                     if (group === 'consonants' || group === 'other') {
-                        consonants[F] = T;
+                        if (!(F in consonants)) {
+                            consonants[F] = T;
+                        }
 
                         for (j = 0; j < numAlts; j++) {
-                            consonants[alts[j]] = T;
+                            if (!(alts[j] in consonants)) {
+                                consonants[alts[j]] = T;
+                            }
                         }
                     }
                 }
@@ -629,7 +666,25 @@
                 toRoman = map.toRoman,
                 skippingTrans = false;
 
-        for (var i = 0, L; (L = data.charAt(i)); i++) {
+        var chars = Array.from(data);
+        for (var i = 0, L; (L = chars[i]); i++) {
+            // Check 2-char and 3-char composite vowel marks first (e.g., Burmese ော, ော်)
+            if (!skippingTrans && i + 1 < chars.length) {
+                var tri = (i + 2 < chars.length) ? (L + chars[i + 1] + chars[i + 2]) : '';
+                var bi = L + chars[i + 1];
+                if (tri && marks[tri] !== undefined) {
+                    buf.push(marks[tri]);
+                    hadRomanConsonant = false;
+                    i += 2;
+                    continue;
+                }
+                if (marks[bi] !== undefined) {
+                    buf.push(marks[bi]);
+                    hadRomanConsonant = false;
+                    i += 1;
+                    continue;
+                }
+            }
             // Toggle transliteration state
             if (L === '#') {
                 if (danglingHash) {
@@ -659,6 +714,17 @@
                 if (hadRomanConsonant) {
                     buf.push('a');
                     hadRomanConsonant = false;
+                }
+
+                // Check 2-char composite letters (e.g., Tibetan independent vowels ཨཱ, ཨི, ཨོ or Sinhala ඕං)
+                if (i + 1 < chars.length) {
+                    var biLet = L + chars[i + 1];
+                    if ((temp = letters[biLet]) !== undefined) {
+                        buf.push(temp);
+                        hadRomanConsonant = toRoman && (biLet in consonants);
+                        i += 1;
+                        continue;
+                    }
                 }
 
                 // Push transliterated letter if possible. Otherwise, push
@@ -731,8 +797,74 @@
         }
 
         if (map.fromRoman) {
-            return transliterateRoman(data, map, options);
+            var res = transliterateRoman(data, map, options);
+            if (to === 'burma') {
+                // Apply standard Myanmar Pali/Sanskrit orthographic shaping:
+                // 1) Word-internal virama '်' before a consonant becomes stacked virama '္'
+                res = res.replace(/\u103A(?=[\u1000-\u1020\u103F-\u1055])/g, '\u1039');
+                // 2) Tall AA ('ါ', 'ေါ') for consonants ခ, ဂ, င, ဒ, ပ, ဝ when not subjoined
+                res = res.replace(/(^|[^\u1039])([\u1001\u1002\u1004\u1012\u1015\u101D])\u1031\u102C(?!\u103A)/g, '$1$2\u1031\u102B');
+                res = res.replace(/(^|[^\u1039])([\u1001\u1002\u1004\u1012\u1015\u101D])\u102C/g, '$1$2\u102B');
+                // 3) Medial Ya, Ra, Wa, Ha, Kinzi (င်္), Great Sa (ဿ), Nya-Nya (ည)
+                res = res.replace(/\u1004\u1039(?=[\u1000-\u1020])/g, '\u1004\u103A\u1039');
+                res = res.replace(/\u101E\u1039\u101E/g, '\u103F');
+                res = res.replace(/\u1009\u1039\u1009/g, '\u100A');
+                res = res.replace(/\u1039\u101A/g, '\u103B');
+                res = res.replace(/\u1039\u101B/g, '\u103C');
+                res = res.replace(/\u1039\u101D/g, '\u103D');
+                res = res.replace(/\u1039\u101F/g, '\u103E');
+            } else if (to === 'khmer') {
+                // Word-final virama in Khmer uses visible virama ៑ (U+17D1) instead of coeng ្ (U+17D2)
+                res = res.replace(/\u17D2(?![\u1780-\u17B3])/g, '\u17D1');
+            } else if (to === 'sinhala') {
+                // Level-1 Sinhala conjuncts (rakaransaya, yansaya, ksha) with ZWJ
+                res = res.replace(/\u0DCA\u0DBB/g, '\u0DCA\u200D\u0DBB')
+                         .replace(/\u0DCA\u0DBA/g, '\u0DCA\u200D\u0DBA')
+                         .replace(/\u0D9A\u0DCA\u0DC2/g, '\u0D9A\u0DCA\u200D\u0DC2');
+            } else if (to === 'tibetan') {
+                // Replace virama + consonant (྄ཀ..྄ཧ) with Tibetan subjoined consonants (ྐ..ྷ)
+                var tibFull = ["྄ཀ","྄ཁ","྄ག","྄གྷ","྄ང","྄ཅ","྄ཆ","྄ཇ","྄ཉ","྄ཊ","྄ཋ","྄ཌ","྄ཌྷ","྄ཎ","྄ཏ","྄ཐ","྄ད","྄དྷ","྄ན","྄པ","྄ཕ","྄བ","྄བྷ","྄མ","྄ཙ","྄ཚ","྄ཛ","྄ཛྷ","྄ཝ","྄ཞ","྄ཟ","྄འ","྄ཡ","྄ར","྄ལ","྄ཤ","྄ཥ","྄ས","྄ཧ"];
+                var tibSub  = ["ྐ","ྑ","ྒ","ྒྷ","ྔ","ྕ","ྖ","ྗ","ྙ","ྚ","ྛ","ྜ","ྜྷ","ྞ","ྟ","ྠ","ྡ","ྡྷ","ྣ","ྤ","ྥ","ྦ","ྦྷ","ྨ","ྩ","ྪ","ྫ","ྫྷ","ྭ","ྮ","ྯ","ྰ","ྱ","ྲ","ླ","ྴ","ྵ","ྶ","ྷ"];
+                for (var ti = 0; ti < tibFull.length; ti++) {
+                    res = res.split(tibFull[ti]).join(tibSub[ti]);
+                }
+                res = res.replace(/ྲྀ/g, 'ྲྀ').replace(/ཷ/g, 'ྲཱྀ').replace(/ླྀ/g, 'ླྀ').replace(/ཹ/g, 'ླཱྀ');
+            }
+            return res;
         } else {
+            if (from === 'burma') {
+                // Normalize Myanmar medial / ligature / tall-AA forms back to canonical sequence
+                data = data
+                    .replace(/\u1004\u103A\u1039/g, '\u1004\u1039')
+                    .replace(/\u103F/g, '\u101E\u1039\u101E')
+                    .replace(/\u100A/g, '\u1009\u1039\u1009')
+                    .replace(/\u103B/g, '\u1039\u101A')
+                    .replace(/\u103C/g, '\u1039\u101B')
+                    .replace(/\u103D/g, '\u1039\u101D')
+                    .replace(/\u103E/g, '\u1039\u101F')
+                    .replace(/\u1031\u102B/g, '\u1031\u102C')
+                    .replace(/\u102B/g, '\u102C')
+                    .replace(/\u1039/g, '\u103A');
+            } else if (from === 'khmer') {
+                data = data.replace(/\u17D1/g, '\u17D2');
+            } else if (from === 'sinhala') {
+                data = data.replace(/\u200D/g, '').replace(/ඥ/g, 'ජ්ඤ');
+            } else if (from === 'tibetan') {
+                data = data
+                    .replace(/ྲཱྀ/g, 'ཷ').replace(/ྲྀ/g, 'ྲྀ').replace(/ླཱྀ/g, 'ཹ').replace(/ླྀ/g, 'ླྀ')
+                    .replace(/ཱི/g, 'ཱི').replace(/ཱུ/g, 'ཱུ')
+                    .replace(/ྺ/g, 'ྭ').replace(/ྻ/g, 'ྱ').replace(/ཪ/g, 'ར')
+                    .replace(/ྂ/g, 'ྃ').replace(/་/g, ' ');
+                var tibFull2 = ["྄ཀ","྄ཁ","྄ག","྄གྷ","྄ང","྄ཅ","྄ཆ","྄ཇ","྄ཉ","྄ཊ","྄ཋ","྄ཌ","྄ཌྷ","྄ཎ","྄ཏ","྄ཐ","྄ད","྄དྷ","྄ན","྄པ","྄ཕ","྄བ","྄བྷ","྄མ","྄ཙ","྄ཚ","྄ཛ","྄ཛྷ","྄ཝ","྄ཞ","྄ཟ","྄འ","྄ཡ","྄ར","྄ལ","྄ཤ","྄ཥ","྄ས","྄ཧ"];
+                var tibSub2  = ["ྐ","ྑ","ྒ","ྒྷ","ྔ","ྕ","ྖ","ྗ","ྙ","ྚ","ྛ","ྜ","ྜྷ","ྞ","ྟ","ྠ","ྡ","ྡྷ","ྣ","ྤ","ྥ","ྦ","ྦྷ","ྨ","ྩ","ྪ","ྫ","ྫྷ","ྭ","ྮ","ྯ","ྰ","ྱ","ྲ","ླ","ྴ","ྵ","ྶ","ྷ"];
+                for (var tj = 0; tj < tibSub2.length; tj++) {
+                    data = data.split(tibSub2[tj]).join(tibFull2[tj]);
+                }
+            }
+            if (to === 'burma' || to === 'khmer' || to === 'sinhala' || to === 'tibetan') {
+                var iastMid = Sanscript.t(data, from, 'iast', options);
+                return Sanscript.t(iastMid, 'iast', to, options);
+            }
             return transliterateBrahmic(data, map, options);
         }
     };

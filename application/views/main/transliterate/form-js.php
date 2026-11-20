@@ -21,11 +21,11 @@
 
         $("#src-txt").toggleClass("lao", srcVal === 'lao');
         $("#dest-txt").toggleClass("lao", destVal === 'lao');
+        $("#src-txt").toggleClass("brahmi", srcVal === 'brahmi');
+        $("#dest-txt").toggleClass("brahmi", destVal === 'brahmi');
 
-        // Live preview for non-burma scripts (burma calls external API on convert)
-        if (srcVal !== 'burma') {
-            $("#dest-txt").val(transliteration());
-        }
+        // Live preview for all scripts (including Burma via Sanscript.t)
+        $("#dest-txt").val(transliteration());
     }
 
     $("#src-type, #dest-type, #lang").on('change', function () {
@@ -33,9 +33,7 @@
     });
 
     $("#src-txt").on('input keyup change paste', function () {
-        if (getSrcTypeval() !== 'burma') {
-            $("#dest-txt").val(transliteration());
-        }
+        $("#dest-txt").val(transliteration());
     });
 
     $("#swap-script-btn").on('click', function () {

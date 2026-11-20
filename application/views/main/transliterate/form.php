@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Brahmi&family=Sarabun:wght@400;500;600;700&display=swap');
 
     @font-face {
         font-family: Laobuhan;
@@ -14,6 +14,10 @@
 
     .lao {
         font-family: Laobuhan, Lanexang_Pali2;
+    }
+
+    .brahmi {
+        font-family: 'Noto Sans Brahmi', 'Segoe UI Historic', 'Sarabun', sans-serif;
     }
 
     .glyphicon-class-dest {
@@ -72,11 +76,15 @@
                         <select name="src-type" id="src-type" class="form-control select-type translite">
                             <optgroup label="<?php echo_line("Southeast Asia"); ?>">
                                 <option value="thai"><?php echo_line("Thai Traditional Form"); ?></option>
-                                <option value="burma"><?php echo_line("Burmese"); ?></option>
+                                <option value="burma"><?php echo_line("Burmese"); ?> (က)</option>
                                 <option value="lao"><?php echo_line("Lao"); ?> (ກ)</option>
+                                <option value="khmer"><?php echo_line("Khmer"); ?> (ក)</option>
                             </optgroup>
                             <optgroup label="<?php echo_line("Indian Scripts"); ?>">
+                                <option value="brahmi"><?php echo_line("Brahmi"); ?> (𑀅)</option>
                                 <option value="devanagari" selected="selected"><?php echo_line("Devanagari"); ?> (अ)</option>
+                                <option value="sinhala"><?php echo_line("Sinhala"); ?> (අ)</option>
+                                <option value="tibetan"><?php echo_line("Tibetan"); ?> (ཨ)</option>
                                 <option value="bengali"><?php echo_line("Bengali"); ?> (অ)</option>
                                 <option value="gurmukhi"><?php echo_line("Gurmukhi"); ?> (ਅ)</option>
                                 <option value="gujarati"><?php echo_line("Gujarati"); ?> (અ)</option>
@@ -106,10 +114,15 @@
                         <label for="dest-type"><?php echo echo_line("Other Characters"); ?></label>
                         <select class="form-control select-type translite" name="dest-type" id="dest-type">
                             <optgroup label="<?php echo_line("Southeast Asia"); ?>">
+                                <option value="burma"><?php echo_line("Burmese"); ?> (က)</option>
                                 <option value="lao"><?php echo echo_line("Lao"); ?> (ກ)</option>
+                                <option value="khmer"><?php echo_line("Khmer"); ?> (ក)</option>
                             </optgroup>
                             <optgroup label="<?php echo_line("Indian Scripts"); ?>">
+                                <option value="brahmi"><?php echo_line("Brahmi"); ?> (𑀅)</option>
                                 <option value="devanagari"><?php echo_line("Devanagari"); ?> (अ)</option>
+                                <option value="sinhala"><?php echo_line("Sinhala"); ?> (අ)</option>
+                                <option value="tibetan"><?php echo_line("Tibetan"); ?> (ཨ)</option>
                                 <option value="bengali"><?php echo_line("Bengali"); ?> (অ)</option>
                                 <option value="gurmukhi"><?php echo_line("Gurmukhi"); ?> (ਅ)</option>
                                 <option value="gujarati"><?php echo_line("Gujarati"); ?> (અ)</option>

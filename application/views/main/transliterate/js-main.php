@@ -51,16 +51,10 @@
         } else if (srcType === 'lao') {
             txt = laosanscript(txt);
             srcType = 'iast';
-        } 
-		else if (srcType === 'burma') {
-            txt = barma_temp;
-            srcType = 'iast';
-			barma_temp ="";
         }
 
         if (srcType === 'iast') {
             txt = txt.toLowerCase();
-
         }
 
         output = Sanscript.t(txt, srcType, destType);
@@ -75,34 +69,18 @@
         var output = "";
         var txt = getSrcTxtval();
         var srcType = getSrcTypeval();
-        var destType = getDestTypeVal();
         txt = lojulaPali(txt);
-        
+
         if (srcType === 'thai') {
             /*thaisanscript.js*/
             output = thaisanscript(txt);
         } else if (srcType === 'lao') {
             /*thaisanscript.js*/
             output = laosanscript(txt);
-        } else if (srcType === 'burma') {
-			output = barma_temp || txt;
         } else {
             output = Sanscript.t(txt, srcType, 'iast');
         }
         return output;
-    }
-
-    function burmesesanscriptAsync(txt) {
-        var url = "https://aksharamukha-plugin.appspot.com/api/public";
-        return $.ajax({
-            type: 'POST',
-            url: url,
-            data: ({source: "Burmese", target: "IAST", text: txt}),
-            dataType: 'html'
-        }).then(function (result) {
-            barma_temp = result;
-            return result;
-        });
     }
 </script>
 

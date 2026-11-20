@@ -1,5 +1,6 @@
 */config/development
 */logs/log-*.php
+*/logs/log-*.txt
 !*/logs/index.html
 */cache/*
 !system/cache/*
@@ -11,8 +12,16 @@ user_guide_src/cilexer/build/*
 user_guide_src/cilexer/dist/*
 user_guide_src/cilexer/pycilexer.egg-info/*
 
-#codeigniter 3
+# CodeIgniter 3 logs & sessions
 application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
+application/session/*
+!application/session/index.html
+!application/session/.htaccess
+
+# Environment & IDE files
+.env
+.DS_Store
+Thumbs.db
 /vendor/

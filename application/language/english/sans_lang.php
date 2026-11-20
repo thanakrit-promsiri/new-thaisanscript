@@ -1,0 +1,116 @@
+<?php
+
+$lang['Home'] = 'Main';
+$lang['Transliteration'] = "Conversion";
+$lang['Example of Transliteration'] = "Example of Transliteration";
+$lang['Article'] = "Blog";
+$lang['Select the character type to convert'] = "Select the script to convert.";
+$lang['When you have selected a character type, you can view the comparative table below.'] = "When you have selected a script, then you can view the comparative table at below.";
+$lang['View the comparative table'] = "View the comparative table";
+$lang["Select the original character."] = "Select the original script.";
+$lang["Enter the character of the selected character type."] = "Enter the character of the selected script.";
+$lang["Then select other comparative characters and"] = "select other comparative scripts and";
+$lang["Then select output language"] = "Then select output language ";
+$lang["press the 'Convert' button"] = "press the 'Convert' button";
+$lang["Convert"] = "Convert";
+$lang["to view the results."] = "to view the results.";
+$lang["Original Character"] = "Original Script";
+$lang["Agreement of using"] = "Agreement";
+$lang["Other Characters"] = "Other Comparative Script";
+$lang["Output Language"] = "Output Language";
+$lang["The comparative table of characters from"] = "The comparative table of characters from";
+$lang["To :"] = "To :";
+$lang["Thai - Sanscritp is work of King Mongkut's University of Technology Thonburi by Thanakrit Promsiri."] = "This is, the work of King Mongkut's University of Technology Thonburi by Thanakrit Promsiri.";
+$lang["Click on the word."] = "Click on the word.";
+$lang["It will mark the highlight color to compare"] = "It will mark the highlight color to compare";
+$lang["Agreement"] = "Agreement of using Thai script (Traditional, formal, official) to other scripts.";
+$lang["Agreement1"] = "1.Conjunction Consonant: The Thai-language typing uses the form of mixed consonants. Vowels are placed before consonants such as “เ=a”, “ไ=i”, “โ=o”, and “เ า-ao”. When typing Thai, the prefix vowels will be positioned in the last conjunction consonant.";
+$lang["Agreement11"] = "แต่หาก พยัญชนะสังโยคควบกับ 'ร' สามารถวางไว้พยัญชนะสังโยคแรกได้ เช่น draupatī สามารถพิมพ์ได้เป็น เทฺราปตี ทฺเราปตี, kṣetre สามารถพิมพ์เป็น กฺเษตฺเร กฺเษเตฺร ยังไม่รองรับการพิมพ์ เกฺษเตฺร";
+$lang["Agreement2"] ="However, if the conjunction consonant is with 'r', then the vowel can be placed in the first conjunction consonant. For example, draupatī can be printed as a “เทฺราปตี”, “ทฺเราปตี”; kṣetre can be printed as a “กฺเษตฺเร”, “กฺเษเตฺร”. At this time, it does not support in a form of “เกฺษเตฺร” yet.";
+$lang["Agreement2"] ="2. Consonants mixed with vowel “ฤ- rue“ “ฤๅ- rue“ “ฦ- lue“ and “ฦๅ- lue“: do not put a dot under the consonant such as mṛga can be printed as a “มฤค”.";
+$lang["Agreement3"] ="3. The sign “: Colon (punctuation)” Use as a “วิสรรชนีย์ (wí-sǎn-chá-nii)” (ะ - a)).";
+$lang["Agreement4"] ="4. The sign of Candarapindu (จันทรพินทุ) or Anunāsika (อนุนาสิกะ): It is a Mai Han-Akat (◌ั) and has the above dot (อัํ). For example, “tālam̐” is printed as “ตาลัํ”.";
+$lang["An open source software program codes is allowed according to Creative Commons License Attribution 4.0 – Non Commercial - Share Alike."] = "An open source software program codes is allowed according to Creative Commons License Attribution 4.0 – Non Commercial - Share Alike.";
+$lang["Accept"] = "Accept";
+$lang["for Lao script please install font"] = "for Lao script please install font";
+$lang["Thai"] = "Thai";
+$lang["Thai Traditional Form"] = "Thai Traditional Form";
+$lang["Thai Simple Form"] = "Thai Simple Form";
+$lang["Thai Traditional(Formal)"] = "Thai Traditional(Formal)";
+$lang["Thai Simple(General)"] = "Thai Simple(General)";
+$lang["Southeast Asia"] = "Southeast Asia";
+$lang["Burmese"] = "Burmese";
+$lang["Lao"] = "Lao";
+$lang["Myanmar"] = "Myanmar";
+$lang["India"] = "India";
+$lang["Devanagari"] = "Devanagari";
+$lang["Bengali"] = "Bengali";
+$lang["Gurmukhi"] = "Gurmukhi";
+$lang["Gujarati"] = "Gujarati";
+$lang["Oriya"] = "Oriya";
+$lang["Tamil"] = "Tamil";
+$lang["Telugu"] = "Telugu";
+$lang["Kannada"] = "Kannada";
+$lang["Malayalam"] = "Malayalam";
+$lang["Indian Scripts"] = "Indian Scripts";
+$lang["Romanize"] = "Romanize";
+$lang["Sanskrit"] = "Sanskrit";
+$lang["Pali"] = "Pali";
+
+// Home page (/main/indexmain)
+$lang["home_slide1_title"] = "How It Works";
+$lang["home_slide1_h2"] = "Thai-Sanscript is a transliteration tool converting Romanized Sanskrit into Thai-Sanskrit according to the International Alphabet of Sanskrit Transliteration (IAST) standard.";
+$lang["home_slide1_h3"] = "Sanskrit evolved from Vedic Sanskrit found in the Rigveda around 1,200 BCE—early Brahmanical hymns praising the deities. Early Vedic Sanskrit did not yet have strict grammatical codification and followed broad grammatical principles.";
+$lang["home_slide2_title"] = "Foundation";
+$lang["home_slide2_h2"] = "Thai-Sanscript is built upon the SANSCRIPT library from learnsanskrit.org, which converts various Indic scripts and Romanization schemes into standard IAST.";
+$lang["home_slide2_h3"] = "Around the 6th–5th century BCE, the grammarian Pāṇini of Gandhāra observed regional dialects mixing into Vedic Sanskrit and compiled the eight-chapter grammar 'Aṣṭādhyāyī'. This refined language became known as Classical Sanskrit, featured in epics such as the Mahābhārata and the Rāmāyaṇa.";
+$lang["home_slide3_title"] = "Results & Verification";
+$lang["home_slide3_h2"] = "Thai-Sanscript is an assistive transliteration tool. Some outputs may still require review before formal use. A side-by-side comparison table is provided so you can easily verify every word.";
+$lang["home_slide3_h3"] = "Another branch, Buddhist Hybrid Sanskrit, emerged after Classical Sanskrit and appears in Sarvāstivāda and Mahāyāna Buddhist scriptures. One of the most renowned scholars of this tradition was the Chinese monk Xuanzang.";
+$lang["home_read_more"] = "Read more..";
+
+$lang["home_policy_title"] = "Usage Policy";
+$lang["home_policy_lead"] = "A vast collection of Sanskrit texts in Devanagari and Romanized scripts is available online. Thai-Sanscript helps:";
+$lang["home_feat1_title"] = "Create Value";
+$lang["home_feat1_desc"] = "Adds value to Sanskrit documents for readers who are more comfortable reading Thai or Lao scripts than Devanagari or Roman script.";
+$lang["home_feat2_title"] = "Fast Transliteration";
+$lang["home_feat2_desc"] = "What once took days to transliterate manually can now be done with a single click in seconds.";
+$lang["home_feat3_title"] = "Support Education";
+$lang["home_feat3_desc"] = "Serves as a practical tool supporting Sanskrit and Pali study and research.";
+$lang["home_feat4_title"] = "No Copyright Restrictions";
+$lang["home_feat4_desc"] = "All transliterated outputs belong to everyone—no attribution required and free for commercial use.";
+$lang["home_feat5_title"] = "Open Source Software";
+$lang["home_feat5_code"] = "Source code";
+$lang["home_feat5_desc"] = "is licensed under the Creative Commons License";
+$lang["home_feat6_title"] = "Built with Care";
+$lang["home_feat6_desc"] = "Created willingly with dedication to make Sanskrit and Pali transliteration accessible to everyone.";
+
+$lang["home_work_title"] = "Methodology";
+$lang["home_work_intro"] = "This tool transliterates Romanized Sanskrit into Thai-Sanskrit based on the International Alphabet of Sanskrit Transliteration (IAST) standard in two formats:";
+$lang["home_work1_title"] = "1. Thai Traditional (Formal / Orthographic)";
+$lang["home_work1_desc"] = "Preserves the exact etymological spelling using diacritical marks so that the text can be accurately converted back into Roman (IAST) or Devanagari script.";
+$lang["home_work2_title"] = "2. Thai Simple (General / Adapted)";
+$lang["home_work2_desc"] = "Adapts spelling to standard Thai orthography for easier reading by the general public. While close to phonetic transcription, learners should still study proper pronunciation.";
+
+$lang["home_scope_title"] = "Scope of Work";
+$lang["home_scope1_title"] = "Potential Limitations from Underlying Libraries";
+$lang["home_scope1_desc"] = "This project focuses on transliterating IAST Sanskrit. Conversion between other Indic scripts and Roman schemes relies on the SANSCRIPT library from learnsanskrit.org, so outputs should be verified before use.";
+$lang["home_scope2_title"] = "Forward Transliteration Scope";
+$lang["home_scope2_desc"] = "Transliterates Sanskrit and Pali from standard IAST into both Thai Simple (General) and Thai Traditional (Formal) scripts, as well as Lao script.";
+$lang["home_scope3_title"] = "Reverse Transliteration Scope";
+$lang["home_scope3_desc"] = "Supports reverse transliteration from Thai Traditional (Formal) and Lao back into IAST, but does not convert Thai Simple (General) back into IAST.";
+
+$lang["home_source_title"] = "Document Sources";
+$lang["home_source_lead"] = "Numerous Sanskrit resources and online manuscripts are available across the internet,<br>making study and research more accessible for students and scholars.";
+
+// UI actions & notes
+$lang["install_lao_font"] = "Install Lao Font";
+$lang["clear_text"] = "Clear";
+$lang["copy_text"] = "Copy";
+$lang["copied_text"] = "Copied ✓";
+$lang["compare_word_by_word"] = "Word-by-Word Compare";
+$lang["back_to_top"] = "Back to Top";
+$lang["lao_adjusted"] = "Lao (Adapted)";
+$lang["public_domain_note"] = "Public Domain: Transliterated results belong to everyone, require no attribution, and may be used commercially.";
+$lang["input_placeholder"] = "Paste or type text to transliterate...";
+$lang["output_placeholder"] = "Transliterated output will appear here...";

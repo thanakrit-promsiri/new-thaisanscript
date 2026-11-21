@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Brahmi&family=Sarabun:wght@400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Brahmi&family=Noto+Sans+Siddham&family=Sarabun:wght@400;500;600;700&display=swap');
 
     @font-face {
         font-family: Laobuhan;
@@ -18,6 +18,10 @@
 
     .brahmi {
         font-family: 'Noto Sans Brahmi', 'Segoe UI Historic', 'Sarabun', sans-serif;
+    }
+
+    .siddham {
+        font-family: 'Noto Sans Siddham', 'Segoe UI Historic', 'Sarabun', sans-serif;
     }
 
     .glyphicon-class-dest {
@@ -82,6 +86,7 @@
                             </optgroup>
                             <optgroup label="<?php echo_line("Indian Scripts"); ?>">
                                 <option value="brahmi"><?php echo_line("Brahmi"); ?> (𑀅)</option>
+                                <option value="siddham"><?php echo_line("Siddham"); ?> (𑖀)</option>
                                 <option value="devanagari" selected="selected"><?php echo_line("Devanagari"); ?> (अ)</option>
                                 <option value="sinhala"><?php echo_line("Sinhala"); ?> (අ)</option>
                                 <option value="tibetan"><?php echo_line("Tibetan"); ?> (ཨ)</option>
@@ -120,6 +125,7 @@
                             </optgroup>
                             <optgroup label="<?php echo_line("Indian Scripts"); ?>">
                                 <option value="brahmi"><?php echo_line("Brahmi"); ?> (𑀅)</option>
+                                <option value="siddham"><?php echo_line("Siddham"); ?> (𑖀)</option>
                                 <option value="devanagari"><?php echo_line("Devanagari"); ?> (अ)</option>
                                 <option value="sinhala"><?php echo_line("Sinhala"); ?> (අ)</option>
                                 <option value="tibetan"><?php echo_line("Tibetan"); ?> (ཨ)</option>

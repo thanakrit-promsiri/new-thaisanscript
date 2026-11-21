@@ -23,6 +23,8 @@
         $("#dest-txt").toggleClass("lao", destVal === 'lao');
         $("#src-txt").toggleClass("brahmi", srcVal === 'brahmi');
         $("#dest-txt").toggleClass("brahmi", destVal === 'brahmi');
+        $("#src-txt").toggleClass("siddham", srcVal === 'siddham');
+        $("#dest-txt").toggleClass("siddham", destVal === 'siddham');
 
         // Live preview for all scripts (including Burma via Sanscript.t)
         $("#dest-txt").val(transliteration());

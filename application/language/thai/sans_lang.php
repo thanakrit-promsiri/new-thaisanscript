@@ -46,6 +46,7 @@ $lang["Tibetan"] = "ทิเบต";
 $lang["Myanmar"] = "พม่า";
 $lang["India"] = "อินเดีย";
 $lang["Brahmi"] = "พราหมี";
+$lang["Siddham"] = "สิทธัม";
 $lang["Devanagari"] = "เทวนาครี";
 $lang["Bengali"] = "เบงกาลี";
 $lang["Gurmukhi"] = "คุรมุขี";

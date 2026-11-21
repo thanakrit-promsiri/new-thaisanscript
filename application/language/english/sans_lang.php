@@ -47,6 +47,7 @@ $lang["Tibetan"] = "Tibetan";
 $lang["Myanmar"] = "Myanmar";
 $lang["India"] = "India";
 $lang["Brahmi"] = "Brahmi";
+$lang["Siddham"] = "Siddham";
 $lang["Devanagari"] = "Devanagari";
 $lang["Bengali"] = "Bengali";
 $lang["Gurmukhi"] = "Gurmukhi";

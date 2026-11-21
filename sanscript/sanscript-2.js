@@ -340,6 +340,15 @@
             virama: ['྄'],
             consonants: 'ཀ ཁ ག གྷ ང ཙ ཚ ཛ ཛྷ ཉ ཊ ཋ ཌ ཌྷ ཎ ཏ ཐ ད དྷ ན པ ཕ བ བྷ མ ཡ ར ལ ཝ ཤ ཥ ས ཧ ལ ཀྵ ཛྙ'.split(' '),
             symbols: '༠ ༡ ༢ ༣ ༤ ༥ ༦ ༧ ༨ ༩ ༀ ྅ ། ༎'.split(' ')
+        },
+
+        siddham: {
+            vowels: '𑖀 𑖁 𑖂 𑖃 𑖄 𑖅 𑖆 𑖇 𑖈 𑖉  𑖊 𑖋  𑖌 𑖍'.split(' '),
+            vowel_marks: '𑖯 𑖰 𑖱 𑖲 𑖳 𑖴 𑖵 𑖿𑖈 𑖿𑖉  𑖸 𑖹  𑖺 𑖻'.split(' '),
+            other_marks: ['𑖽', '𑖾', '𑖼'],
+            virama: ['𑖿'],
+            consonants: '𑖎 𑖏 𑖐 𑖑 𑖒 𑖓 𑖔 𑖕 𑖖 𑖗 𑖘 𑖙 𑖚 𑖛 𑖜 𑖝 𑖞 𑖟 𑖠 𑖡 𑖢 𑖣 𑖤 𑖥 𑖦 𑖧 𑖨 𑖩 𑖪 𑖫 𑖬 𑖭 𑖮 𑖩𑗀 𑖎𑖿𑖬 𑖕𑖿𑖗'.split(' '),
+            symbols: "0 1 2 3 4 5 6 7 8 9 𑖌𑖽 ' 𑗂 𑗃".split(' ')
         }
     },
             // Set of names of schemes
@@ -860,6 +869,14 @@
                 for (var tj = 0; tj < tibSub2.length; tj++) {
                     data = data.split(tibSub2[tj]).join(tibFull2[tj]);
                 }
+            } else if (from === 'siddham') {
+                // Normalize alternate Siddham vowel forms (U+115D8..U+115DD) to standard forms
+                data = data
+                    .replace(/𑗘|𑗙/g, '𑖂')
+                    .replace(/𑗚/g, '𑖃')
+                    .replace(/𑗛/g, '𑖄')
+                    .replace(/𑗜/g, '𑖲')
+                    .replace(/𑗝/g, '𑖳');
             }
             if (to === 'burma' || to === 'khmer' || to === 'sinhala' || to === 'tibetan') {
                 var iastMid = Sanscript.t(data, from, 'iast', options);

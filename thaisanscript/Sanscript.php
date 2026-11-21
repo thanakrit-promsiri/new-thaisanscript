@@ -112,6 +112,19 @@ class Sanscript {
             "candra" => array("ૅ")
         ),
 
+        /* Siddham
+         * -------
+         * Sanskrit-complete.
+         */
+        "siddham" => array(
+            "vowels" => array("𑖀", "𑖁", "𑖂", "𑖃", "𑖄", "𑖅", "𑖆", "𑖇", "𑖈", "𑖉", "", "𑖊", "𑖋", "", "𑖌", "𑖍"),
+            "vowel_marks" => array("𑖯", "𑖰", "𑖱", "𑖲", "𑖳", "𑖴", "𑖵", "𑖿𑖈", "𑖿𑖉", "", "𑖸", "𑖹", "", "𑖺", "𑖻"),
+            "other_marks" => array("𑖽", "𑖾", "𑖼"),
+            "virama" => array("𑖿"),
+            "consonants" => array("𑖎", "𑖏", "𑖐", "𑖑", "𑖒", "𑖓", "𑖔", "𑖕", "𑖖", "𑖗", "𑖘", "𑖙", "𑖚", "𑖛", "𑖜", "𑖝", "𑖞", "𑖟", "𑖠", "𑖡", "𑖢", "𑖣", "𑖤", "𑖥", "𑖦", "𑖧", "𑖨", "𑖩", "𑖪", "𑖫", "𑖬", "𑖭", "𑖮", "𑖩𑗀", "𑖎𑖿𑖬", "𑖕𑖿𑖗"),
+            "symbols" => array("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "𑖌𑖽", "'", "𑗂", "𑗃")
+        ),
+
         /* Gujarati
          * --------
          * Sanskrit-complete.
@@ -637,8 +650,28 @@ class Sanscript {
         $toRoman = &$map['toRoman'];
         $skippingTrans = FALSE;
         $dataChars = preg_split('//u', $data, -1, PREG_SPLIT_NO_EMPTY);
+        $charCount = count($dataChars);
 
-        foreach ($dataChars as $L) {
+        for ($i = 0; $i < $charCount; $i++) {
+            $L = $dataChars[$i];
+
+            if (!$skippingTrans && $i + 1 < $charCount) {
+                $tri = ($i + 2 < $charCount) ? ($L . $dataChars[$i + 1] . $dataChars[$i + 2]) : '';
+                $bi = $L . $dataChars[$i + 1];
+                if ($tri !== '' && isset($marks[$tri])) {
+                    $buf[] = $marks[$tri];
+                    $hadRomanConsonant = FALSE;
+                    $i += 2;
+                    continue;
+                }
+                if (isset($marks[$bi])) {
+                    $buf[] = $marks[$bi];
+                    $hadRomanConsonant = FALSE;
+                    $i += 1;
+                    continue;
+                }
+            }
+
             // Toggle transliteration state
             if ($L === '#') {
                 if ($danglingHash) {
@@ -668,6 +701,16 @@ class Sanscript {
                 if ($hadRomanConsonant) {
                     $buf[] = 'a';
                     $hadRomanConsonant = FALSE;
+                }
+
+                if ($i + 1 < $charCount) {
+                    $biLet = $L . $dataChars[$i + 1];
+                    if (isset($letters[$biLet]) && $letters[$biLet] !== '') {
+                        $buf[] = $letters[$biLet];
+                        $hadRomanConsonant = $toRoman && isset($consonants[$biLet]);
+                        $i += 1;
+                        continue;
+                    }
                 }
 
                 // Push transliterated letter if possible. Otherwise, push

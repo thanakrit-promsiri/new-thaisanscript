@@ -223,7 +223,14 @@ $config['directory_trigger'] = 'd';
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = function_exists('env') ? (int) env('LOG_THRESHOLD', 1) : 1;
+// Default to 2 = ERROR (1) + Application INFO (2), skipping framework init noise (3)
+$_env_log_thresh = function_exists('env') ? env('LOG_THRESHOLD', 2) : 2;
+if (is_string($_env_log_thresh) && strpos($_env_log_thresh, ',') !== FALSE) {
+	$config['log_threshold'] = array_map('intval', explode(',', $_env_log_thresh));
+} else {
+	$config['log_threshold'] = (int) $_env_log_thresh;
+}
+unset($_env_log_thresh);
 
 /*
 |--------------------------------------------------------------------------
@@ -248,7 +255,7 @@ $config['log_path'] = '';
 | Note: Leaving it blank will default to 'php'.
 |
 */
-$config['log_file_extension'] = 'txt';
+$config['log_file_extension'] = 'php';
 
 /*
 |--------------------------------------------------------------------------
@@ -260,7 +267,7 @@ $config['log_file_extension'] = 'txt';
 | IMPORTANT: This MUST be an integer (no quotes) and you MUST use octal
 |            integer notation (i.e. 0700, 0644, etc.)
 */
-$config['log_file_permissions'] = 0700;
+$config['log_file_permissions'] = 0644;
 
 /*
 |--------------------------------------------------------------------------

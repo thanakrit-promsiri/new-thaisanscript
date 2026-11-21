@@ -100,6 +100,7 @@ unset($_env_file);
  * NOTE: If you change these, also change the error_reporting() code below
  */
 	define('ENVIRONMENT', env('CI_ENV', 'development'));
+	date_default_timezone_set(env('APP_TIMEZONE', 'Asia/Bangkok'));
 
 /*
  *---------------------------------------------------------------

@@ -79,21 +79,25 @@
                         <label for="src-type"><?php echo echo_line("Original Character"); ?></label>
                         <select name="src-type" id="src-type" class="form-control select-type translite">
                             <optgroup label="<?php echo_line("Southeast Asia"); ?>">
-                                <option value="thai"><?php echo_line("Thai Traditional Form"); ?></option>
-                                <option value="burma"><?php echo_line("Burmese"); ?> (က)</option>
+                                <option value="thai"><?php echo_line("Thai Traditional Form"); ?> (ก)</option>
                                 <option value="lao"><?php echo_line("Lao"); ?> (ກ)</option>
+                                <option value="burma"><?php echo_line("Burmese"); ?> (က)</option>
                                 <option value="khmer"><?php echo_line("Khmer"); ?> (ក)</option>
                             </optgroup>
-                            <optgroup label="<?php echo_line("Indian Scripts"); ?>">
+                            <optgroup label="<?php echo_line("Ancient & Buddhist Scripts"); ?>">
                                 <option value="brahmi"><?php echo_line("Brahmi"); ?> (𑀅)</option>
                                 <option value="siddham"><?php echo_line("Siddham"); ?> (𑖀)</option>
-                                <option value="devanagari" selected="selected"><?php echo_line("Devanagari"); ?> (अ)</option>
-                                <option value="sinhala"><?php echo_line("Sinhala"); ?> (අ)</option>
                                 <option value="tibetan"><?php echo_line("Tibetan"); ?> (ཨ)</option>
+                                <option value="sinhala"><?php echo_line("Sinhala"); ?> (අ)</option>
+                            </optgroup>
+                            <optgroup label="<?php echo_line("North & East Indian Scripts"); ?>">
+                                <option value="devanagari" selected="selected"><?php echo_line("Devanagari"); ?> (अ)</option>
                                 <option value="bengali"><?php echo_line("Bengali"); ?> (অ)</option>
                                 <option value="gurmukhi"><?php echo_line("Gurmukhi"); ?> (ਅ)</option>
                                 <option value="gujarati"><?php echo_line("Gujarati"); ?> (અ)</option>
                                 <option value="oriya"><?php echo_line("Oriya"); ?> (ଅ)</option>
+                            </optgroup>
+                            <optgroup label="<?php echo_line("South Indian Scripts"); ?>">
                                 <option value="tamil"><?php echo_line("Tamil"); ?> (அ)</option>
                                 <option value="telugu"><?php echo_line("Telugu"); ?> (అ)</option>
                                 <option value="kannada"><?php echo_line("Kannada"); ?> (ಅ)</option>
@@ -101,10 +105,10 @@
                             </optgroup>
                             <optgroup label="<?php echo_line("Romanize"); ?>">
                                 <option value="iast">IAST</option>
-                                <option value="kolkata">Kolkata</option>
+                                <option value="kolkata">ISO 15919 (Kolkata)</option>
                                 <option value="itrans">ITRANS</option>
                                 <option value="hk">Harvard-Kyoto</option>
-                                <option value="slp1">SLP</option>
+                                <option value="slp1">SLP1</option>
                             </optgroup>
                         </select>
                     </div>
@@ -119,20 +123,24 @@
                         <label for="dest-type"><?php echo echo_line("Other Characters"); ?></label>
                         <select class="form-control select-type translite" name="dest-type" id="dest-type">
                             <optgroup label="<?php echo_line("Southeast Asia"); ?>">
+                                <option value="lao"><?php echo_line("Lao"); ?> (ກ)</option>
                                 <option value="burma"><?php echo_line("Burmese"); ?> (က)</option>
-                                <option value="lao"><?php echo echo_line("Lao"); ?> (ກ)</option>
                                 <option value="khmer"><?php echo_line("Khmer"); ?> (ក)</option>
                             </optgroup>
-                            <optgroup label="<?php echo_line("Indian Scripts"); ?>">
+                            <optgroup label="<?php echo_line("Ancient & Buddhist Scripts"); ?>">
                                 <option value="brahmi"><?php echo_line("Brahmi"); ?> (𑀅)</option>
                                 <option value="siddham"><?php echo_line("Siddham"); ?> (𑖀)</option>
-                                <option value="devanagari"><?php echo_line("Devanagari"); ?> (अ)</option>
-                                <option value="sinhala"><?php echo_line("Sinhala"); ?> (අ)</option>
                                 <option value="tibetan"><?php echo_line("Tibetan"); ?> (ཨ)</option>
+                                <option value="sinhala"><?php echo_line("Sinhala"); ?> (අ)</option>
+                            </optgroup>
+                            <optgroup label="<?php echo_line("North & East Indian Scripts"); ?>">
+                                <option value="devanagari"><?php echo_line("Devanagari"); ?> (अ)</option>
                                 <option value="bengali"><?php echo_line("Bengali"); ?> (অ)</option>
                                 <option value="gurmukhi"><?php echo_line("Gurmukhi"); ?> (ਅ)</option>
                                 <option value="gujarati"><?php echo_line("Gujarati"); ?> (અ)</option>
                                 <option value="oriya"><?php echo_line("Oriya"); ?> (ଅ)</option>
+                            </optgroup>
+                            <optgroup label="<?php echo_line("South Indian Scripts"); ?>">
                                 <option value="tamil"><?php echo_line("Tamil"); ?> (அ)</option>
                                 <option value="telugu"><?php echo_line("Telugu"); ?> (అ)</option>
                                 <option value="kannada"><?php echo_line("Kannada"); ?> (ಅ)</option>
@@ -140,10 +148,10 @@
                             </optgroup>
                             <optgroup label="<?php echo_line("Romanize"); ?>">
                                 <option value="iast" selected="selected">IAST</option>
-                                <option value="kolkata">Kolkata</option>
+                                <option value="kolkata">ISO 15919 (Kolkata)</option>
                                 <option value="itrans">ITRANS</option>
                                 <option value="hk">Harvard-Kyoto</option>
-                                <option value="slp1">SLP</option>
+                                <option value="slp1">SLP1</option>
                             </optgroup>
                         </select>
                     </div>
@@ -157,8 +165,8 @@
                     </div>
                 </div>
 
-                <!-- Side-by-Side Input & Instant Output Panels -->
-                <div class="translator-panes">
+                <!-- Input Panel -->
+                <div class="translator-panes translator-panes-single">
                     <div class="translator-pane pane-source">
                         <div class="pane-header">
                             <span id="pane-src-label" class="pane-title">เทวนาครี (अ)</span>
@@ -167,16 +175,6 @@
                             </button>
                         </div>
                         <textarea name="src-txt" id="src-txt" required="required" class="form-control translite" rows="7" placeholder="<?php echo_line("input_placeholder"); ?>">गोब्राह्मणेभ्यः शुभमस्तु नित्यं लोकाः समस्ताः सुखिनोभवन्तु ॥</textarea>
-                    </div>
-
-                    <div class="translator-pane pane-dest">
-                        <div class="pane-header">
-                            <span id="pane-dest-label" class="pane-title">IAST</span>
-                            <button type="button" id="copy-dest-btn" class="btn-pane-action" title="<?php echo_line("copy_text"); ?>">
-                                <span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span> <span id="copy-dest-text"><?php echo_line("copy_text"); ?></span>
-                            </button>
-                        </div>
-                        <textarea name="dest-txt" id="dest-txt" readonly="readonly" class="form-control" rows="7" placeholder="<?php echo_line("output_placeholder"); ?>">gobrāhmaṇebhyaḥ śubhamastu nityaṃ lokāḥ samastāḥ sukhinobhavantu ॥</textarea>
                     </div>
                 </div>
 

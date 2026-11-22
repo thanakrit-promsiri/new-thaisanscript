@@ -4,38 +4,60 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://www.thai-sanscript.com/</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://www.thai-sanscript.com/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>1.0</priority>
 </url>
 <url>
-  <loc>http://www.thai-sanscript.com/index.php/sample/vajrasutra</loc>
+  <loc>https://www.thai-sanscript.com/main/indexmain</loc>
   <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
 </url>
 <url>
-  <loc>http://www.thai-sanscript.com/index.php/sample/pratimoksa</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://www.thai-sanscript.com/main/transliterate</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
 </url>
 <url>
-  <loc>http://www.thai-sanscript.com/index.php/sample/buddhacarita</loc>
+  <loc>https://www.thai-sanscript.com/main/example</loc>
   <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
 </url>
 <url>
-  <loc>http://www.thai-sanscript.com/index.php/sample/lalitavistara</loc>
+  <loc>https://www.thai-sanscript.com/sample/vajrasutra</loc>
   <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
 </url>
 <url>
-  <loc>http://www.thai-sanscript.com/index.php/sample/mahabharat</loc>
+  <loc>https://www.thai-sanscript.com/sample/pratimoksa</loc>
   <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
 </url>
 <url>
-  <loc>http://www.thai-sanscript.com/index.php/sample/ramayana</loc>
+  <loc>https://www.thai-sanscript.com/sample/buddhacarita</loc>
   <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
 </url>
 <url>
-  <loc>http://www.thai-sanscript.com/index.php/sample/rigveda</loc>
+  <loc>https://www.thai-sanscript.com/sample/lalitavistara</loc>
   <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://www.thai-sanscript.com/sample/mahabharat</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://www.thai-sanscript.com/sample/ramayana</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://www.thai-sanscript.com/sample/rigveda</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
 </url>
 </urlset>

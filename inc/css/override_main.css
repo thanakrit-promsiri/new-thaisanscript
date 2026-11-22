@@ -196,6 +196,14 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid #e2e8f0;
 }
 
+.translator-panes.translator-panes-single {
+    grid-template-columns: 1fr;
+}
+
+.translator-panes.translator-panes-single .translator-pane.pane-source {
+    border-right: none;
+}
+
 @media (max-width: 767px) {
     .translator-panes {
         grid-template-columns: 1fr;

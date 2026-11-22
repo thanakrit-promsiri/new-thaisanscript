@@ -16,7 +16,6 @@
         var srcType = getSrcTypeval();
 
         function runBackendCompare(sendToBackend, destinationStr) {
-            $("#dest-txt").val(destinationStr);
             var destination = lineSplit(destinationStr);
 
             $.ajax({
@@ -42,12 +41,6 @@
                     var normal_type = "thai";
                     if (getDestTypeVal() === 'lao') {
                         destination = data[2];
-                        if (Array.isArray(destination)) {
-                            var flatLao = destination.map(function (row) {
-                                return Array.isArray(row) ? row.join(' ') : row;
-                            }).join('\n');
-                            $("#dest-txt").val(flatLao);
-                        }
                         normal_header = '<?php echo_line("lao_adjusted"); ?>';
                         normal_type = "lao";
                     }

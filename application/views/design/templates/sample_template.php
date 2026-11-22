@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:fb="http://www.facebook.com/2008/fbml"> 
+<html lang="th" xmlns:fb="http://www.facebook.com/2008/fbml"> 
     <head>
         <?php $this->load->view('design/component/common/meta'); ?>
         <title><?php echo $page_title; ?></title>
